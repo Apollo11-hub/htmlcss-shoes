@@ -14,6 +14,18 @@ ul{
 }
 
 
+li:hover{
+  background-color: lightgray;
+}
+
+li:active{
+  background-color: gray;
+  transform: translate(0,30%);
+  box-shadow: 10px 5px 10px 3px ;
+}
+
+
+
 .color-first{
   background-color: red;
   color: yellow;
