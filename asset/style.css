@@ -2,23 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif ;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 html{
   scroll-behavior: smooth;
 }
 
+
+a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px 0px;
+} 
+
 ul{
   list-style: none;
 }
 
 
-li:hover{
+a:hover{
   background-color: lightgray;
 }
 
-li:active{
+a:active{
   background-color: gray;
   transform: translate(0,30%);
   box-shadow: 10px 5px 10px 3px ;
@@ -49,20 +63,17 @@ li:active{
 
 nav{
   position: fixed;
-  top: 15px;
-  right: 5px;
+  top: 0px;
+  right: 0px;
   z-index: 999;
 }
 
 nav ul li{
   display: inline-block;
+  margin: 50px 30px 0 0;
   border-radius: 50%;
-  padding: 20px 25px;
-  margin:30px 40px 0 0;
   font-size: 15px;
   font-weight: 900;
-  color: black;
-  background-color: white;
 }
 
 /* 
@@ -80,7 +91,7 @@ Main
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
-  padding: 150px;
+  text-align: center;
   }
 
 .image-text-container img{ 
@@ -89,7 +100,7 @@ Main
 
 .text-under-image{
   text-align: center;
-  font-size: 55px;
+  font-size: 3vw;
   text-transform: uppercase;
   font-weight: 600;
 }
